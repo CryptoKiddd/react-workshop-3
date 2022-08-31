@@ -32,23 +32,18 @@ function Parent() {
       </div>
 
       <div className="parent">
-        {array.map((item) => {
-          return <Child userLogIn={userLogIn} key={item.id} user={item} />;
-        })}
+        {array.map(  item  => <Child userLogIn={userLogIn} key={item.id} user={item} />  )}
       </div>
 
       <div className="parent-buttons">
+
         <button className="parent-btn" onClick={() => setUserLogIn(!userLogIn)}>
-          {" "}
-          {userLogIn === true ? "log out" : "log in"}{" "}
+          {userLogIn === true ? "log out" : "log in"}
         </button>
-        <button className="parent-btn" onClick={() => setArray([])}>
-          {" "}
-          Clear users{" "}
-        </button>
-        <button className="parent-btn" onClick={handeFill}>
-          Fill users{" "}
-        </button>
+        <button className="parent-btn" onClick={() => setArray([])}>  Clear users  </button>
+
+        <button className="parent-btn" onClick={handeFill}>Fill users</button>
+        
       </div>
     </div>
   );

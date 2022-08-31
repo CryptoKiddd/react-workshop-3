@@ -7,9 +7,14 @@
     border: 2px solid rgb(255, 255, 255);
     width: 35%;
     height: 120px;
-    border-radius: 50px;
-    box-shadow: 2px 2px 5px white;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgb(112, 110, 110);
+    cursor: pointer;
+    transition: .5s ease;
 
+}
+.userlist:hover{
+    transform: scale(1.1);
 }
 .userlist p{
     font-size: 1.2rem;

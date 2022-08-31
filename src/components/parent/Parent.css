@@ -3,12 +3,15 @@ box-sizing: border-box;
 }
 .parent-wrapper{
     height: 100vh;
-    width: 100%;
+    width: 70%;
     display: flex;
     padding: 2rem 1rem;
     flex-direction: column;
     align-items: center;
     background-color: rgb(88, 209, 240);
+    border-radius: 25%;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 4px 4px 15px rgb(255, 255, 255);
 }
 .parent{
     width: 100%;
@@ -23,7 +26,7 @@ box-sizing: border-box;
 .parent-buttons{
     margin-top: 1rem;
     display: flex;
-    flex-direction: column;
+   justify-content: center;
     align-items: center;
     gap: 15px;
     width: 100%;
