@@ -37,7 +37,7 @@ const Users = () => {
       SetUsers(generateUsers())
     }
    
-    console.log('users',users)
+    console.log('users before useeffect',users)
 
     useEffect(
         ()=>{
@@ -47,11 +47,14 @@ const Users = () => {
 
         },[]
     )
+    console.log('users after use effect',users)
+ 
   return (
     <div className="users" >
       <UsersCount userslist={users} /> 
       <div className="usersWrapper">
-         {users.map(item => <User className='user'  user={item} key={item.id} />  )}
+        {!users.length?   <h1>There are no users left to delete them, Fill the Userlist by clicking 'Fill users'</h1>:
+         users.map(item => <User className='user'  user={item} key={item.id} />  )}
       </div>
      
     <button className="btn btn-delete" onClick={handleRandom}>Delete Random User</button>

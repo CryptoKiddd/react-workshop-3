@@ -2,12 +2,12 @@
 import './User.css'
 export const User = ({ user }) => {
   return (
-    <div className="userWrapper">
+    <div className="userWrapper" >
      
       
-          <p>{user.name}</p>
-          <p>{user.lastname}</p>
-          <p>{user.age}</p>
+          <p>Name: {user.name}</p>
+          <p>Lastname: {user.lastname}</p>
+          <p>Age: {user.age}</p>
   
       
     </div>
