@@ -1,16 +1,14 @@
-import Parent from './components/parent/Parent'
-import Navbar from './components/navbar/Navbar'
-import Footer from './components/footer/Footer'
+
 import './App.css';
+import Users from './components/Users/Users';
+
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
 
-       <Parent />
-
-      <Footer />
+      <Users  />
+      
     </div>
   );
 }

@@ -5,10 +5,12 @@
 }
 .App{
     display: flex;
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(54, 47, 47);
     flex-direction: column;
+    color: white;
     align-items: center;
     justify-content: center;
     gap: 50px;
+    width: 100%;
 
 }
