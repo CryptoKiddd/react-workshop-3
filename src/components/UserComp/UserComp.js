@@ -6,7 +6,7 @@ export const UserComp = ({users, counter}) => {
   useEffect(() => {
     document.title = `${counter} users left`
     console.log(counter)
-    return()=>{document.title = 'no more users'}
+
   
   }, [users])
   

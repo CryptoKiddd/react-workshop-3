@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from 'react';
+
 import './User.css'
 export const User = ({ user }) => {
   
