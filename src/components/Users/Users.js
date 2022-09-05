@@ -43,7 +43,12 @@ const Users = () => {
         ()=>{
           
             SetUsers(generateUsers())
+           
             console.log('didmount')
+           return()=>{
+            console.log('did unmount')
+            document.title = 'no more users'
+           }
 
         },[]
     )
@@ -52,6 +57,8 @@ const Users = () => {
   return (
     <div className="users" >
       <UsersCount userslist={users} /> 
+
+      <UserComp users={users} />
       <div className="usersWrapper">
         {!users.length?   <h1>There are no users left to delete them, Fill the Userlist by clicking 'Fill users'</h1>:
          users.map(item => <User className='user'  user={item} key={item.id} />  )}

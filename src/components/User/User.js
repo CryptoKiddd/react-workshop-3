@@ -1,6 +1,12 @@
 
+import { useEffect } from 'react';
 import './User.css'
 export const User = ({ user }) => {
+  useEffect(
+    ()=>{
+   
+  },[]
+  )
   return (
     <div className="userWrapper" >
      
